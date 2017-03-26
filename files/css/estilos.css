@@ -1,0 +1,385 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+
+body{
+    max-width: auto; /* tamaño maximo de la pagina web*/
+	font-family: Helvetica;
+    color: #666;
+    background: #f2f2f2; 
+	margin: 0 auto;
+	text-align: center;
+    font-size: 24px;
+    padding-top: 60px; /** espacio de inicio **/
+}
+
+
+header, nav{
+    display: block;
+	
+}
+
+/* Definimos un ancho 100% y una altura fija para nuestro menú */
+header{
+    background: #22282e;
+    height:60px;
+	left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+}
+
+/* El logo sera flotado a la izquierda */
+#logo{
+    background: url(logo.png) no-repeat 0 0;
+    display: block;
+    float: left;
+    margin: 6px 10px 0;
+    width: 82px;
+    height: 46px;
+    text-indent: -9999px
+}
+
+/* Nuestro nav con id #menu lo flotaremos a la derecha*/
+#menu{float: right;}   
+
+    /* Quitamos estilos por defecto de el tag UL */
+    #menu ul{
+        list-style: none;
+        font-size: 14px;
+    }
+        
+        /* Centramos y ponemos los textos en mayuscula */
+        #menu li{
+           display: block;
+           float: left;
+           text-transform: uppercase;
+           text-align: center;
+        }
+            
+            /* Damos estilo a nuestros enlaces */
+            #menu li a{
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                height: 60px;
+                line-height: 60px;
+                padding: 0 26px;
+            }
+            #menu li a:hover{
+                background: #151a1e;
+                color: #ffc700;
+            }
+    
+    /* Estilos #nav-mobile y lo ocultamos */
+    #nav-mobile{
+        display: none;
+        background: url(nav.png) no-repeat center center;
+        float: right;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        right: 0;
+        top:0;
+        opacity: .6;
+
+    }   
+        /* Agregaremos esta clase a #nav-mobile, cuando el menu mobile haya sido desplegado */
+        #nav-mobile.nav-active{
+            opacity: 1;
+        }
+
+/* Content */
+#content{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+/************************* section **********/
+
+section    {
+		background: purple;
+		color: black;
+		text-align: center;
+		width: 100%;
+		padding: 10px;
+		margin: 0 auto;
+		float: left;
+		display: inline-block;
+		}
+
+article    {
+		background: white;
+		color: black;
+		width: 100%;
+		padding: 10px;
+		margin: 10px auto;
+		border-radius: 20px;
+		box-shadow: 0 0 15px 0 maroon;
+		float: left;
+		display: inline-block;
+		}
+
+	
+	aside {
+		background: white;
+		color: black;
+		width: 100%;
+		padding: 10px;
+		margin: 0 auto;
+		text-align: center;
+		float: center;
+		display: inline-block;
+	}
+	
+
+	
+	
+	
+footer{
+	
+		width: 100%;
+		background: black;
+		color: #FFF;
+		margin: auto;
+		padding-bottom: 30px;
+		text-align: center;
+}
+
+footer nav {
+		width: 100%;
+		background: #000;
+	
+		margin: auto;
+		text-align: center; /*alineacion de texto*/
+		
+		
+}
+
+footer nav ul { 
+		list-style: none; 
+		overflow: hidden;
+		
+		text-decoration: none;
+		display:inline-block; /* codigo para poner en linea los nav */
+	
+}
+
+footer nav ul li {
+	float: left;
+	
+}
+
+footer nav ul li a{
+
+	display: block;
+	
+	color: #FFF;
+	text-decoration: none;
+}
+	
+
+
+ 
+h1 {
+    font-size: 60px;
+    margin: Auto;
+	padding: 10px;
+}
+
+h2 {
+	font-size: 50px;
+    margin: Auto;
+	padding: 5px;
+}
+
+h3 {
+	font-size: 20px;
+    	margin: Auto;
+	padding: 5px;
+	padding-top: 25px;
+}
+
+p {
+    margin: auto;
+	padding: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+	padding: 5px;
+}
+
+img:hover {
+-webkit-transform: scale(1.1);
+ -ms-transform: scale(1.1);
+ transform: scale(1.1); 
+ }
+ 
+/*
+ * Navegación
+ */
+nav {
+    float: right;
+}
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        padding-right: 20px;
+    }
+    
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+        }
+            
+            nav ul li a {
+                display: block;
+                padding: 0 10px;
+                text-decoration: none;
+            }
+            
+                nav ul li a:hover {
+                    background: #0b76a6;
+                }
+    
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+        
+
+		
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+
+body{
+    max-width: auto; /* tamaño maximo de la pagina web*/
+	font-family: Helvetica;
+    color: #666;
+    background: #f2f2f2; 
+	margin: 0 auto;
+	text-align: center;
+    font-size: 16px;
+  
+}	
+		
+	 
+h1 {
+    font-size: 30px;
+    margin: Auto;
+	padding: 5px;
+}
+
+h2 {
+	font-size: 20px;
+    margin: Auto;
+	padding: 5px;
+}
+
+h3 {
+	font-size: 20px;
+    margin: Auto;
+	padding: 5px;
+}
+
+p {
+    margin: auto;
+	padding: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+	padding: 5px;
+}
+	
+img:hover {
+-webkit-transform: scale(1.1);
+ -ms-transform: scale(1.1);
+ transform: scale(1.1); 
+ }		
+    
+    /* mostramos #nav-mobile */
+    #nav-mobile{ display: block; }
+
+    /* Fijamos nuestro nav en 100% ancho y dejamos de flotarlo  */
+    #menu{
+        width: 100%;
+        float: none;
+        padding-top: 60px;
+    }
+        /* Convertimos nuestra lista de enlaces en un menú horizontal */
+        #menu ul{
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.5);
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.5);
+            box-shadow: 0 1px 2px rgba(0,0,0,.5);
+            max-height: 0;
+            overflow: hidden;
+        }
+            /* estilos para los LI del menu */
+            #menu li{
+                background: #33363b;
+                border-bottom: 1px solid #282b30;
+                float: none;
+            }
+
+            /* Quitamos el borde del ultimo item del menú */
+            #menu li:last-child{ border-bottom: 0;}
+                #menu li a{
+                    padding: 15px 0;
+                    height: auto;
+                    line-height: normal;
+                }
+                #menu li a:hover{background:#2a2d33}
+
+        /* Agregamos una animación al despligue del menú */
+        #menu ul.open-menu{
+            max-height: 400px;
+            -webkit-transition: max-height .4s;
+            -moz-transition: max-height .4s;
+            -ms-transition: max-height .4s;
+            -o-transition: max-height .4s;
+            transition: max-height .4s;
+        }
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+
+
+
+}

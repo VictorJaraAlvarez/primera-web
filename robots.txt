@@ -1,0 +1,11 @@
+User-agent: * 
+
+allow: /software.html
+
+allow: /servicios.html
+
+allow: /nosotros.html
+
+Disallow: https://masterxcorp.wordpress.com
+
+Disallow: /404.html
